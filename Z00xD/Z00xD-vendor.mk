@@ -476,5 +476,13 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/lib64/libcmdthread.so:system/lib64/libcmdthread.so\
     vendor/asus/Z00xD/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
     vendor/asus/Z00xD/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
+	
+# Keymaster
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt
 
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
