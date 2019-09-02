@@ -22,7 +22,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/asus/Z00xD/overlay
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/bin/ZE500KG_afCali:system/bin/ZE500KG_afCali \
     vendor/asus/Z00xD/proprietary/bin/Camera_Unique_ID:system/bin/Camera_Unique_ID \
     vendor/asus/Z00xD/proprietary/bin/BackupCalibrationData:system/bin/BackupCalibrationData \
     vendor/asus/Z00xD/proprietary/bin/RestoreCalibrationData:system/bin/RestoreCalibrationData \
