@@ -502,5 +502,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
     vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
 
+# Keystore
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z00xD/proprietary/vendor/lib/hw/keystore.msm8916.so:system/vendor/lib/hw/keystore.msm8916.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib64/hw/keystore.msm8916.so:system/vendor/lib64/hw/keystore.msm8916.so
 
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
