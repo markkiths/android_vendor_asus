@@ -507,4 +507,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/vendor/lib/hw/keystore.msm8916.so:system/vendor/lib/hw/keystore.msm8916.so \
     vendor/asus/Z00xD/proprietary/vendor/lib64/hw/keystore.msm8916.so:system/vendor/lib64/hw/keystore.msm8916.so
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z00xD/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
+
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
