@@ -509,4 +509,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
 
+# WiFi
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z00xD/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
