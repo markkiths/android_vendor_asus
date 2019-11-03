@@ -18,8 +18,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-DEVICE_PACKAGE_OVERLAYS += vendor/asus/Z00xD/overlay
-
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/bin/Camera_Unique_ID:system/bin/Camera_Unique_ID \
