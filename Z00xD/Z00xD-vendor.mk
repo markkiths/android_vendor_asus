@@ -20,497 +20,497 @@ LOCAL_PATH := $(call my-dir)
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/bin/Camera_Unique_ID:system/bin/Camera_Unique_ID \
-    vendor/asus/Z00xD/proprietary/bin/BackupCalibrationData:system/bin/BackupCalibrationData \
-    vendor/asus/Z00xD/proprietary/bin/RestoreCalibrationData:system/bin/RestoreCalibrationData \
-    vendor/asus/Z00xD/proprietary/bin/camera_flash:system/bin/camera_flash \
-    vendor/asus/Z00xD/proprietary/bin/camera_flash2:system/bin/camera_flash2 \
-    vendor/asus/Z00xD/proprietary/bin/CameraModule:system/bin/CameraModule \
-    vendor/asus/Z00xD/proprietary/bin/CameraOTP:system/bin/CameraOTP \
-    vendor/asus/Z00xD/proprietary/bin/CameraResolution:system/bin/CameraResolution \
-    vendor/asus/Z00xD/proprietary/bin/CameraTest:system/bin/CameraTest \
-    vendor/asus/Z00xD/proprietary/bin/dit_af_cali:system/bin/dit_af_cali\
-    vendor/asus/Z00xD/proprietary/bin/dit_cali:system/bin/dit_cali\
-    vendor/asus/Z00xD/proprietary/bin/LaserOn:system/bin/LaserOn \
-    vendor/asus/Z00xD/proprietary/bin/LaserFocus_Status:system/bin/LaserFocus_Status \
-    vendor/asus/Z00xD/proprietary/bin/ZE500KG_afCali:system/bin/ZE500KG_afCali \
-    vendor/asus/Z00xD/proprietary/vendor/bin/mm-qcamera-daemon:system/vendor/bin/mm-qcamera-daemon
+    vendor/asus/Z00xD/proprietary/bin/Camera_Unique_ID:$(TARGET_COPY_OUT_SYSTEM)/bin/Camera_Unique_ID \
+    vendor/asus/Z00xD/proprietary/bin/BackupCalibrationData:$(TARGET_COPY_OUT_SYSTEM)/bin/BackupCalibrationData \
+    vendor/asus/Z00xD/proprietary/bin/RestoreCalibrationData:$(TARGET_COPY_OUT_SYSTEM)/bin/RestoreCalibrationData \
+    vendor/asus/Z00xD/proprietary/bin/camera_flash:$(TARGET_COPY_OUT_SYSTEM)/bin/camera_flash \
+    vendor/asus/Z00xD/proprietary/bin/camera_flash2:$(TARGET_COPY_OUT_SYSTEM)/bin/camera_flash2 \
+    vendor/asus/Z00xD/proprietary/bin/CameraModule:$(TARGET_COPY_OUT_SYSTEM)/bin/CameraModule \
+    vendor/asus/Z00xD/proprietary/bin/CameraOTP:$(TARGET_COPY_OUT_SYSTEM)/bin/CameraOTP \
+    vendor/asus/Z00xD/proprietary/bin/CameraResolution:$(TARGET_COPY_OUT_SYSTEM)/bin/CameraResolution \
+    vendor/asus/Z00xD/proprietary/bin/CameraTest:$(TARGET_COPY_OUT_SYSTEM)/bin/CameraTest \
+    vendor/asus/Z00xD/proprietary/bin/dit_af_cali:$(TARGET_COPY_OUT_SYSTEM)/bin/dit_af_cali\
+    vendor/asus/Z00xD/proprietary/bin/dit_cali:$(TARGET_COPY_OUT_SYSTEM)/bin/dit_cali\
+    vendor/asus/Z00xD/proprietary/bin/LaserOn:$(TARGET_COPY_OUT_SYSTEM)/bin/LaserOn \
+    vendor/asus/Z00xD/proprietary/bin/LaserFocus_Status:$(TARGET_COPY_OUT_SYSTEM)/bin/LaserFocus_Status \
+    vendor/asus/Z00xD/proprietary/bin/ZE500KG_afCali:$(TARGET_COPY_OUT_SYSTEM)/bin/ZE500KG_afCali \
+    vendor/asus/Z00xD/proprietary/vendor/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.vendor.msm8916.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_hdr.so:system/lib/libarcsoft_hdr.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_nighthawk.so:system/lib/libarcsoft_nighthawk.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_night_shot.so:system/lib/libarcsoft_night_shot.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_piczoom.so:system/lib/libarcsoft_piczoom.so \
-    vendor/asus/Z00xD/proprietary/lib/libarcsoft_videostabilizer.so:system/lib/libarcsoft_videostabilizer.so \
-    vendor/asus/Z00xD/proprietary/lib/libcameraap.so:system/lib/libcameraap.so \
-    vendor/asus/Z00xD/proprietary/lib/libcamera_defocus.so:system/lib/libcamera_defocus.so \
-    vendor/asus/Z00xD/proprietary/lib/libcamera_pano.so:system/lib/libcamera_pano.so \
-    vendor/asus/Z00xD/proprietary/lib/libmorpho_panorama_gp.so:system/lib/libmorpho_panorama_gp.so \
-    vendor/asus/Z00xD/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
-    vendor/asus/Z00xD/proprietary/lib/libsarcsoftface.so:system/lib/libsarcsoftface.so \
-    vendor/asus/Z00xD/proprietary/lib/libsarcsoft_gallery.so:system/lib/libsarcsoft_gallery.so \
-    vendor/asus/Z00xD/proprietary/lib/libsarcsoft.so:system/lib/libsarcsoft.so \
-    vendor/asus/Z00xD/proprietary/lib/libsphere3.so:system/lib/libsphere3.so \
-    vendor/asus/Z00xD/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
-    vendor/asus/Z00xD/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    vendor/asus/Z00xD/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/asus/Z00xD/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
-    vendor/asus/Z00xD/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_HL.cfg:system/lib/DIT_AT_BACK_HL.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:system/lib/DIT_AT_BACK_NORMAL.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:system/lib/DIT_AT_BACK_PREVIEW.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_SR.CFG:system/lib/DIT_AT_BACK_SR.CFG \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:system/lib/DIT_AT_BACK_VIDEO.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_HL.cfg:system/lib/DIT_AT_FRONT_HL.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:system/lib/DIT_AT_FRONT_NORMAL.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_PRE.cfg:system/lib/DIT_AT_FRONT_PRE.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:system/lib/DIT_AT_FRONT_VIDEO.cfg \
-    vendor/asus/Z00xD/proprietary/lib/DITConfig.cfg:system/lib/DITConfig.cfg \
-    vendor/asus/Z00xD/proprietary/lib/libxditk_ArcSoftMOD.so:system/lib/libxditk_ArcSoftMOD.so \
-    vendor/asus/Z00xD/proprietary/lib/libxditk_AT.so:system/lib/libxditk_AT.so \
-    vendor/asus/Z00xD/proprietary/lib/libxditk_ISP.so:system/lib/libxditk_ISP.so \
-    vendor/asus/Z00xD/proprietary/lib/libxditk_SR.so:system/lib/libxditk_SR.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_DIT_MSM8916.so:system/vendor/lib/libxditk_DIT_MSM8916.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_DIT_Qualcomm.so:system/vendor/lib/libxditk_DIT_Qualcomm.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_mmcamera2_stats_algorithm.so:system/vendor/lib/libxditk_mmcamera2_stats_algorithm.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_Network.so:system/vendor/lib/libxditk_Network.so
+    vendor/asus/Z00xD/proprietary/lib/hw/camera.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.msm8916.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_beautyshot.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_face_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_face_tracking.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_hdr.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_hdr.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_nighthawk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_nighthawk.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_night_shot.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_night_shot.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_panorama_burstcapture.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_panorama_burstcapture.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_piczoom.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_piczoom.so \
+    vendor/asus/Z00xD/proprietary/lib/libarcsoft_videostabilizer.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_videostabilizer.so \
+    vendor/asus/Z00xD/proprietary/lib/libcameraap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcameraap.so \
+    vendor/asus/Z00xD/proprietary/lib/libcamera_defocus.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcamera_defocus.so \
+    vendor/asus/Z00xD/proprietary/lib/libcamera_pano.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcamera_pano.so \
+    vendor/asus/Z00xD/proprietary/lib/libmorpho_panorama_gp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmorpho_panorama_gp.so \
+    vendor/asus/Z00xD/proprietary/lib/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmpbase.so \
+    vendor/asus/Z00xD/proprietary/lib/libsarcsoftface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsarcsoftface.so \
+    vendor/asus/Z00xD/proprietary/lib/libsarcsoft_gallery.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsarcsoft_gallery.so \
+    vendor/asus/Z00xD/proprietary/lib/libsarcsoft.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsarcsoft.so \
+    vendor/asus/Z00xD/proprietary/lib/libsphere3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsphere3.so \
+    vendor/asus/Z00xD/proprietary/lib/libmm-qcamera.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmm-qcamera.so \
+    vendor/asus/Z00xD/proprietary/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmcamera_interface.so \
+    vendor/asus/Z00xD/proprietary/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmjpeg_interface.so \
+    vendor/asus/Z00xD/proprietary/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmm-omxcore.so \
+    vendor/asus/Z00xD/proprietary/lib/libqomx_core.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqomx_core.so \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_HL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_HL.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_NORMAL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_NORMAL.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_PREVIEW.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_PREVIEW.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_SR.CFG:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_SR.CFG \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_BACK_VIDEO.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_BACK_VIDEO.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_HL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_HL.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_NORMAL.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_NORMAL.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_PRE.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_PRE.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DIT_AT_FRONT_VIDEO.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DIT_AT_FRONT_VIDEO.cfg \
+    vendor/asus/Z00xD/proprietary/lib/DITConfig.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib/DITConfig.cfg \
+    vendor/asus/Z00xD/proprietary/lib/libxditk_ArcSoftMOD.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_ArcSoftMOD.so \
+    vendor/asus/Z00xD/proprietary/lib/libxditk_AT.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_AT.so \
+    vendor/asus/Z00xD/proprietary/lib/libxditk_ISP.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_ISP.so \
+    vendor/asus/Z00xD/proprietary/lib/libxditk_SR.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libxditk_SR.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_DIT_MSM8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_DIT_MSM8916.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_DIT_Qualcomm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_DIT_Qualcomm.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_mmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_mmcamera2_stats_algorithm.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libxditk_Network.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxditk_Network.so
 
 #Actuator
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_a3907_camcorder.so:system/vendor/lib/libactuator_a3907_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_a3907_camera.so:system/vendor/lib/libactuator_a3907_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_a3907.so:system/vendor/lib/libactuator_a3907.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_bu64297_q13v06k_camcorder.so:system/vendor/lib/libactuator_bu64297_q13v06k_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_bu64297_q13v06k_camera.so:system/vendor/lib/libactuator_bu64297_q13v06k_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_bu64297_q13v06k.so:system/vendor/lib/libactuator_bu64297_q13v06k.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camcorder.so:system/vendor/lib/libactuator_dw9714_13p1ba_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camera.so:system/vendor/lib/libactuator_dw9714_13p1ba_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_13p1ba.so:system/vendor/lib/libactuator_dw9714_13p1ba.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_camcorder.so:system/vendor/lib/libactuator_dw9714_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_camera.so:system/vendor/lib/libactuator_dw9714_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_pc0fe_camcorder.so:system/vendor/lib/libactuator_dw9714_pc0fe_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_pc0fe_camera.so:system/vendor/lib/libactuator_dw9714_pc0fe_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_pc0fe.so:system/vendor/lib/libactuator_dw9714_pc0fe.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camcorder.so:system/vendor/lib/libactuator_dw9714_q13n04a_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camera.so:system/vendor/lib/libactuator_dw9714_q13n04a_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13n04a.so:system/vendor/lib/libactuator_dw9714_q13n04a.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13v04b_camcorder.so:system/vendor/lib/libactuator_dw9714_q13v04b_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13v04b_camera.so:system/vendor/lib/libactuator_dw9714_q13v04b_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13v04b.so:system/vendor/lib/libactuator_dw9714_q13v04b.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q8v19w_camcorder.so:system/vendor/lib/libactuator_dw9714_q8v19w_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q8v19w_camera.so:system/vendor/lib/libactuator_dw9714_q8v19w_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q8v19w.so:system/vendor/lib/libactuator_dw9714_q8v19w.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714.so:system/vendor/lib/libactuator_dw9714.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9716_camcorder.so:system/vendor/lib/libactuator_dw9716_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9716_camera.so:system/vendor/lib/libactuator_dw9716_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9716.so:system/vendor/lib/libactuator_dw9716.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9761b_camcorder.so:system/vendor/lib/libactuator_dw9761b_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9761b_camera.so:system/vendor/lib/libactuator_dw9761b_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9761b.so:system/vendor/lib/libactuator_dw9761b.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_iu074_camcorder.so:system/vendor/lib/libactuator_iu074_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_iu074_camera.so:system/vendor/lib/libactuator_iu074_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_iu074.so:system/vendor/lib/libactuator_iu074.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov12830_camcorder.so:system/vendor/lib/libactuator_ov12830_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov12830_camera.so:system/vendor/lib/libactuator_ov12830_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov12830.so:system/vendor/lib/libactuator_ov12830.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov8825_camcorder.so:system/vendor/lib/libactuator_ov8825_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov8825_camera.so:system/vendor/lib/libactuator_ov8825_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov8825.so:system/vendor/lib/libactuator_ov8825.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so:system/vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camera.so:system/vendor/lib/libactuator_rohm_bu64243gwz_camera.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:system/vendor/lib/libactuator_rohm_bu64243gwz.so
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_a3907_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_a3907_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_a3907_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_a3907_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_a3907.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_a3907.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_bu64297_q13v06k_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_bu64297_q13v06k_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_bu64297_q13v06k_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_bu64297_q13v06k_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_bu64297_q13v06k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_bu64297_q13v06k.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_13p1ba_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_13p1ba_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_13p1ba_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_13p1ba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_13p1ba.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_pc0fe_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_pc0fe_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_pc0fe_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_pc0fe_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_pc0fe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_pc0fe.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q13n04a_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13n04a_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q13n04a_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13n04a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q13n04a.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13v04b_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q13v04b_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13v04b_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q13v04b_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q13v04b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q13v04b.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q8v19w_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q8v19w_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q8v19w_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q8v19w_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714_q8v19w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714_q8v19w.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9714.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9714.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9716_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9716_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9716_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9716_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9716.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9716.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9761b_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9761b_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9761b_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9761b_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_dw9761b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_dw9761b.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_iu074_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_iu074_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_iu074_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_iu074_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_iu074.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_iu074.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov12830_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov12830_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov12830_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov12830_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov12830.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov12830.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov8825_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov8825_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov8825_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov8825_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_ov8825.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_ov8825.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camcorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64243gwz_camcorder.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_rohm_bu64243gwz_camera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64243gwz_camera.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libactuator_rohm_bu64243gwz.so:$(TARGET_COPY_OUT_VENDOR)/lib/libactuator_rohm_bu64243gwz.so
 
 # Chromatix
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_common.so:system/vendor/lib/libchromatix_imx132_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_default_video.so:system/vendor/lib/libchromatix_imx132_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_liveshot.so:system/vendor/lib/libchromatix_imx132_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_preview.so:system/vendor/lib/libchromatix_imx132_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_snapshot.so:system/vendor/lib/libchromatix_imx132_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_common.so:system/vendor/lib/libchromatix_imx134_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_default_video.so:system/vendor/lib/libchromatix_imx134_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_hfr_120.so:system/vendor/lib/libchromatix_imx134_hfr_120.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_hfr_60.so:system/vendor/lib/libchromatix_imx134_hfr_60.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_preview.so:system/vendor/lib/libchromatix_imx134_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_snapshot.so:system/vendor/lib/libchromatix_imx134_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_adrc.so:system/vendor/lib/libchromatix_imx135_adrc.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_common.so:system/vendor/lib/libchromatix_imx135_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_default_video.so:system/vendor/lib/libchromatix_imx135_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:system/vendor/lib/libchromatix_imx135_hfr_120.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_hfr_60.so:system/vendor/lib/libchromatix_imx135_hfr_60.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_hfr_90.so:system/vendor/lib/libchromatix_imx135_hfr_90.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_liveshot.so:system/vendor/lib/libchromatix_imx135_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_preview.so:system/vendor/lib/libchromatix_imx135_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:system/vendor/lib/libchromatix_imx135_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_common.so:system/vendor/lib/libchromatix_imx214_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_default_video.so:system/vendor/lib/libchromatix_imx214_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_hfr_120fps.so:system/vendor/lib/libchromatix_imx214_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_hfr_60fps.so:system/vendor/lib/libchromatix_imx214_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_hfr_90fps.so:system/vendor/lib/libchromatix_imx214_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_liveshot.so:system/vendor/lib/libchromatix_imx214_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_preview.so:system/vendor/lib/libchromatix_imx214_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:system/vendor/lib/libchromatix_imx214_snapshot_hdr.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:system/vendor/lib/libchromatix_imx214_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_video_1080p.so:system/vendor/lib/libchromatix_imx214_video_1080p.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_video_hdr.so:system/vendor/lib/libchromatix_imx214_video_hdr.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_common.so:system/vendor/lib/libchromatix_mn34150_asus_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_binning.so:system/vendor/lib/libchromatix_mn34150_asus_preview_binning.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_full.so:system/vendor/lib/libchromatix_mn34150_asus_preview_full.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_video.so:system/vendor/lib/libchromatix_mn34150_asus_preview_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_common.so:system/vendor/lib/libchromatix_ov13850_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_default_video.so:system/vendor/lib/libchromatix_ov13850_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_hfr_120fps.so:system/vendor/lib/libchromatix_ov13850_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_hfr_60fps.so:system/vendor/lib/libchromatix_ov13850_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_hfr_90fps.so:system/vendor/lib/libchromatix_ov13850_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_preview.so:system/vendor/lib/libchromatix_ov13850_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_common.so:system/vendor/lib/libchromatix_ov13850_q13v06k_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_default_video.so:system/vendor/lib/libchromatix_ov13850_q13v06k_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120fps.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60fps.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90fps.so:system/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_preview.so:system/vendor/lib/libchromatix_ov13850_q13v06k_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_snapshot.so:system/vendor/lib/libchromatix_ov13850_q13v06k_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_snapshot.so:system/vendor/lib/libchromatix_ov13850_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_common.so:system/vendor/lib/libchromatix_ov16825_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_default_video.so:system/vendor/lib/libchromatix_ov16825_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_preview.so:system/vendor/lib/libchromatix_ov16825_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_snapshot.so:system/vendor/lib/libchromatix_ov16825_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_common.so:system/vendor/lib/libchromatix_ov2680_5987fhq_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_common_v32.so:system/vendor/lib/libchromatix_ov2680_5987fhq_common_v32.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_default_video.so:system/vendor/lib/libchromatix_ov2680_5987fhq_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_default_video_v32.so:system/vendor/lib/libchromatix_ov2680_5987fhq_default_video_v32.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_preview.so:system/vendor/lib/libchromatix_ov2680_5987fhq_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_preview_v32.so:system/vendor/lib/libchromatix_ov2680_5987fhq_preview_v32.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so:system/vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_snapshot_v32.so:system/vendor/lib/libchromatix_ov2680_5987fhq_snapshot_v32.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_common.so:system/vendor/lib/libchromatix_ov2680_cht852b_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_default_video.so:system/vendor/lib/libchromatix_ov2680_cht852b_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_preview.so:system/vendor/lib/libchromatix_ov2680_cht852b_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_snapshot.so:system/vendor/lib/libchromatix_ov2680_cht852b_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_common.so:system/vendor/lib/libchromatix_ov2680_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_default_video.so:system/vendor/lib/libchromatix_ov2680_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_preview.so:system/vendor/lib/libchromatix_ov2680_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_snapshot.so:system/vendor/lib/libchromatix_ov2680_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_common.so:system/vendor/lib/libchromatix_ov2680_zs2p80f1_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_default_video.so:system/vendor/lib/libchromatix_ov2680_zs2p80f1_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_preview.so:system/vendor/lib/libchromatix_ov2680_zs2p80f1_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_snapshot.so:system/vendor/lib/libchromatix_ov2680_zs2p80f1_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_common.so:system/vendor/lib/libchromatix_ov2720_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_default_video.so:system/vendor/lib/libchromatix_ov2720_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_hfr.so:system/vendor/lib/libchromatix_ov2720_hfr.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_liveshot.so:system/vendor/lib/libchromatix_ov2720_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_preview.so:system/vendor/lib/libchromatix_ov2720_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_zsl.so:system/vendor/lib/libchromatix_ov2720_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_common.so:system/vendor/lib/libchromatix_ov5648_oty5f03_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so:system/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_preview.so:system/vendor/lib/libchromatix_ov5648_oty5f03_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so:system/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so:system/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_common.so:system/vendor/lib/libchromatix_ov5648_p5v18g_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_p5v18g_default_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video.so:system/vendor/lib/libchromatix_ov5648_p5v18g_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_preview.so:system/vendor/lib/libchromatix_ov5648_p5v18g_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_snapshot.so:system/vendor/lib/libchromatix_ov5648_p5v18g_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_zsl.so:system/vendor/lib/libchromatix_ov5648_p5v18g_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_common.so:system/vendor/lib/libchromatix_ov5648_q5v22e_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video_hd.so:system/vendor/lib/libchromatix_ov5648_q5v22e_default_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video.so:system/vendor/lib/libchromatix_ov5648_q5v22e_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_preview.so:system/vendor/lib/libchromatix_ov5648_q5v22e_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_snapshot.so:system/vendor/lib/libchromatix_ov5648_q5v22e_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_zsl.so:system/vendor/lib/libchromatix_ov5648_q5v22e_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_common.so:system/vendor/lib/libchromatix_ov5670_30010a3_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_default_video.so:system/vendor/lib/libchromatix_ov5670_30010a3_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_hfr_120fps.so:system/vendor/lib/libchromatix_ov5670_30010a3_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_hfr_60fps.so:system/vendor/lib/libchromatix_ov5670_30010a3_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_hfr_90fps.so:system/vendor/lib/libchromatix_ov5670_30010a3_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_liveshot.so:system/vendor/lib/libchromatix_ov5670_30010a3_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_preview.so:system/vendor/lib/libchromatix_ov5670_30010a3_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_snapshot.so:system/vendor/lib/libchromatix_ov5670_30010a3_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_video_hd.so:system/vendor/lib/libchromatix_ov5670_30010a3_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_zsl.so:system/vendor/lib/libchromatix_ov5670_30010a3_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_common.so:system/vendor/lib/libchromatix_ov5670_asus_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_gt_common.so:system/vendor/lib/libchromatix_ov5670_asus_gt_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_gt_preview_full.so:system/vendor/lib/libchromatix_ov5670_asus_gt_preview_full.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_preview_full.so:system/vendor/lib/libchromatix_ov5670_asus_preview_full.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_common.so:system/vendor/lib/libchromatix_ov5670_q5v41b_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_default_video.so:system/vendor/lib/libchromatix_ov5670_q5v41b_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so:system/vendor/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_liveshot.so:system/vendor/lib/libchromatix_ov5670_q5v41b_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_preview.so:system/vendor/lib/libchromatix_ov5670_q5v41b_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_snapshot.so:system/vendor/lib/libchromatix_ov5670_q5v41b_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_video_hd.so:system/vendor/lib/libchromatix_ov5670_q5v41b_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_zsl.so:system/vendor/lib/libchromatix_ov5670_q5v41b_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_common.so:system/vendor/lib/libchromatix_ov5670_qc700_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_default_video.so:system/vendor/lib/libchromatix_ov5670_qc700_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_hfr_120fps.so:system/vendor/lib/libchromatix_ov5670_qc700_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_hfr_60fps.so:system/vendor/lib/libchromatix_ov5670_qc700_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_hfr_90fps.so:system/vendor/lib/libchromatix_ov5670_qc700_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_liveshot.so:system/vendor/lib/libchromatix_ov5670_qc700_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_preview.so:system/vendor/lib/libchromatix_ov5670_qc700_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_snapshot.so:system/vendor/lib/libchromatix_ov5670_qc700_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_video_hd.so:system/vendor/lib/libchromatix_ov5670_qc700_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_zsl.so:system/vendor/lib/libchromatix_ov5670_qc700_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_common.so:system/vendor/lib/libchromatix_ov8825_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_default_video.so:system/vendor/lib/libchromatix_ov8825_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_hfr_120fps.so:system/vendor/lib/libchromatix_ov8825_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_hfr_60fps.so:system/vendor/lib/libchromatix_ov8825_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_hfr_90fps.so:system/vendor/lib/libchromatix_ov8825_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_liveshot_hd.so:system/vendor/lib/libchromatix_ov8825_liveshot_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_liveshot.so:system/vendor/lib/libchromatix_ov8825_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_preview_hd.so:system/vendor/lib/libchromatix_ov8825_preview_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_preview.so:system/vendor/lib/libchromatix_ov8825_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_snapshot_hd.so:system/vendor/lib/libchromatix_ov8825_snapshot_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_snapshot.so:system/vendor/lib/libchromatix_ov8825_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_video_hd.so:system/vendor/lib/libchromatix_ov8825_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_zsl.so:system/vendor/lib/libchromatix_ov8825_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_common.so:system/vendor/lib/libchromatix_ov8858_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:system/vendor/lib/libchromatix_ov8858_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_hfr_60fps.so:system/vendor/lib/libchromatix_ov8858_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_hfr_90fps.so:system/vendor/lib/libchromatix_ov8858_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:system/vendor/lib/libchromatix_ov8858_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_common.so:system/vendor/lib/libchromatix_ov8858_q8v19w_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so:system/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so:system/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_preview.so:system/vendor/lib/libchromatix_ov8858_q8v19w_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so:system/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_video_nonHD.so:system/vendor/lib/libchromatix_ov8858_q8v19w_video_nonHD.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_zsl_30.so:system/vendor/lib/libchromatix_ov8858_q8v19w_zsl_30.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so:system/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_common.so:system/vendor/lib/libchromatix_ov8865_q8v18a_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so:system/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so:system/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so:system/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_preview.so:system/vendor/lib/libchromatix_ov8865_q8v18a_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so:system/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so:system/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so:system/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_common.so:system/vendor/lib/libchromatix_ov9724_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_default_video.so:system/vendor/lib/libchromatix_ov9724_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_liveshot.so:system/vendor/lib/libchromatix_ov9724_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_preview.so:system/vendor/lib/libchromatix_ov9724_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_common.so:system/vendor/lib/libchromatix_s5k3l1yx_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_default_video.so:system/vendor/lib/libchromatix_s5k3l1yx_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so:system/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_liveshot.so:system/vendor/lib/libchromatix_s5k3l1yx_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_preview.so:system/vendor/lib/libchromatix_s5k3l1yx_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_snapshot.so:system/vendor/lib/libchromatix_s5k3l1yx_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_video_hd.so:system/vendor/lib/libchromatix_s5k3l1yx_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_zsl.so:system/vendor/lib/libchromatix_s5k3l1yx_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_common.so:system/vendor/lib/libchromatix_s5k3m2xm_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_default_video.so:system/vendor/lib/libchromatix_s5k3m2xm_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_120.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_120.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_60.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_60.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_90.so:system/vendor/lib/libchromatix_s5k3m2xm_hfr_90.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_liveshot.so:system/vendor/lib/libchromatix_s5k3m2xm_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_preview.so:system/vendor/lib/libchromatix_s5k3m2xm_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_snapshot.so:system/vendor/lib/libchromatix_s5k3m2xm_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_common.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_liveshot.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_preview.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_snapshot.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_video_hd.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_zsl.so:system/vendor/lib/libchromatix_S5K4E1_13P1BA_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so:system/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so:system/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so:system/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so:system/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so:system/vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_common.so:system/vendor/lib/libchromatix_t4k35_asus_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_preview_binning.so:system/vendor/lib/libchromatix_t4k35_asus_preview_binning.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_preview_full.so:system/vendor/lib/libchromatix_t4k35_asus_preview_full.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_preview_video.so:system/vendor/lib/libchromatix_t4k35_asus_preview_video.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_common.so:system/vendor/lib/libchromatix_t4k37_asus_common.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_preview_binning.so:system/vendor/lib/libchromatix_t4k37_asus_preview_binning.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_preview_full.so:system/vendor/lib/libchromatix_t4k37_asus_preview_full.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_preview_video.so:system/vendor/lib/libchromatix_t4k37_asus_preview_video.so
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx132_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx132_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_hfr_120.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_hfr_60.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx134_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx134_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_adrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_adrc.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_120.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_60.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_hfr_90.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx135_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_snapshot_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_snapshot_hdr.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_video_1080p.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_video_1080p.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_imx214_video_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_imx214_video_hdr.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mn34150_asus_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mn34150_asus_preview_binning.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mn34150_asus_preview_full.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_mn34150_asus_preview_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_mn34150_asus_preview_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_q13v06k_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_q13v06k_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_q13v06k_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_q13v06k_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_q13v06k_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_q13v06k_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_q13v06k_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_q13v06k_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov13850_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov13850_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16825_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16825_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16825_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov16825_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov16825_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_common_v32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_common_v32.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_default_video_v32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_default_video_v32.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_preview_v32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_preview_v32.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_5987fhq_snapshot_v32.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_5987fhq_snapshot_v32.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_cht852b_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_cht852b_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_cht852b_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_cht852b_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_cht852b_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_zs2p80f1_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_zs2p80f1_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_zs2p80f1_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2680_zs2p80f1_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2680_zs2p80f1_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_hfr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_hfr.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov2720_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov2720_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_oty5f03_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_oty5f03_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_p5v18g_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_p5v18g_default_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_p5v18g_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_p5v18g_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_p5v18g_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_p5v18g_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_p5v18g_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_q5v22e_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_q5v22e_default_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_q5v22e_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_q5v22e_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_q5v22e_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5648_q5v22e_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5648_q5v22e_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_30010a3_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_30010a3_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_asus_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_gt_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_asus_gt_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_gt_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_asus_gt_preview_full.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_asus_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_asus_preview_full.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_q5v41b_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_q5v41b_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov5670_qc700_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov5670_qc700_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_liveshot_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_liveshot_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_preview_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_preview_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_snapshot_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_snapshot_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8825_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8825_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_video_nonHD.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_video_nonHD.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_zsl_30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_zsl_30.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_q8v19w_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_q8v19w_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8858_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov8865_q8v18a_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov8865_q8v18a_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_ov9724_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_ov9724_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3l1yx_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3l1yx_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_hfr_120.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_hfr_60.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_hfr_90.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_hfr_90.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_s5k3m2xm_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_s5k3m2xm_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_S5K4E1_13P1BA_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_S5K4E1_13P1BA_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAA_ST_gc0339_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAA_ST_gc0339_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAA_ST_gc0339_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAA_ST_gc0339_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuab_shinetech_gc0339_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuab_shinetech_gc0339_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_liveshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_SKUAB_ST_s5k4e1_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_hfr_120fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_hfr_60fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_hfr_90fps.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_video_hd.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov12830_p12v01c_zsl.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_preview.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k35_asus_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_preview_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k35_asus_preview_binning.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k35_asus_preview_full.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k35_asus_preview_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k35_asus_preview_video.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k37_asus_common.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_preview_binning.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k37_asus_preview_binning.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_preview_full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k37_asus_preview_full.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libchromatix_t4k37_asus_preview_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromatix_t4k37_asus_preview_video.so
 
 # mmcamera
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_q3a_core.so:system/vendor/lib/libmmcamera2_q3a_core.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:system/vendor/lib/libmmcamera2_imglib_modules.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_isp_modules.so:system/vendor/lib/libmmcamera2_isp_modules.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_is.so:system/vendor/lib/libmmcamera2_is.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:system/vendor/lib/libmmcamera2_pproc_modules.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:system/vendor/lib/libmmcamera2_sensor_modules.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:system/vendor/lib/libmmcamera2_stats_algorithm.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so:system/vendor/lib/libmmcamera_dw9761b_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_gc0310.so:system/vendor/lib/libmmcamera_gc0310.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_hdr_lib.so:system/vendor/lib/libmmcamera_hdr_lib.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_hi256.so:system/vendor/lib/libmmcamera_hi256.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx132.so:system/vendor/lib/libmmcamera_imx132.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx134.so:system/vendor/lib/libmmcamera_imx134.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx135.so:system/vendor/lib/libmmcamera_imx135.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx214.so:system/vendor/lib/libmmcamera_imx214.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_mn34150.so:system/vendor/lib/libmmcamera_mn34150.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:system/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov13850_q13v06k.so:system/vendor/lib/libmmcamera_ov13850_q13v06k.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov13850.so:system/vendor/lib/libmmcamera_ov13850.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov16825.so:system/vendor/lib/libmmcamera_ov16825.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680_5987fhq.so:system/vendor/lib/libmmcamera_ov2680_5987fhq.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680_cht852b.so:system/vendor/lib/libmmcamera_ov2680_cht852b.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680.so:system/vendor/lib/libmmcamera_ov2680.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680_zs2p80f1.so:system/vendor/lib/libmmcamera_ov2680_zs2p80f1.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2720.so:system/vendor/lib/libmmcamera_ov2720.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5645.so:system/vendor/lib/libmmcamera_ov5645.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5648_oty5f03.so:system/vendor/lib/libmmcamera_ov5648_oty5f03.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5648_p5v18g.so:system/vendor/lib/libmmcamera_ov5648_p5v18g.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5648_q5v22e.so:system/vendor/lib/libmmcamera_ov5648_q5v22e.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5670_30010a3.so:system/vendor/lib/libmmcamera_ov5670_30010a3.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5670_q5v41b.so:system/vendor/lib/libmmcamera_ov5670_q5v41b.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5670_qc700.so:system/vendor/lib/libmmcamera_ov5670_qc700.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov7695.so:system/vendor/lib/libmmcamera_ov7695.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8825.so:system/vendor/lib/libmmcamera_ov8825.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8858_q8v19w_30.so:system/vendor/lib/libmmcamera_ov8858_q8v19w_30.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8858_q8v19w.so:system/vendor/lib/libmmcamera_ov8858_q8v19w.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8865_q8v18a.so:system/vendor/lib/libmmcamera_ov8865_q8v18a.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov9724.so:system/vendor/lib/libmmcamera_ov9724.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:system/vendor/lib/libmmcamera_s5k3l1yx.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_s5k3m2xm.so:system/vendor/lib/libmmcamera_s5k3m2xm.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_S5K4E1_13P1BA.so:system/vendor/lib/libmmcamera_S5K4E1_13P1BA.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so:system/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so:system/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so:system/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so:system/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so:system/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:system/vendor/lib/libmmcamera_sonyimx135_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sp1628.so:system/vendor/lib/libmmcamera_sp1628.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_ov8858_q8v19w_eeprom.so:system/vendor/lib/libmmcamera_sunny_ov8858_q8v19w_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:system/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:system/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:system/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:system/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:system/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunrise_pc0fe_eeprom.so:system/vendor/lib/libmmcamera_sunrise_pc0fe_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_t4k35.so:system/vendor/lib/libmmcamera_t4k35.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_t4k37.so:system/vendor/lib/libmmcamera_t4k37.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:system/vendor/lib/libmmcamera_truly_cm7700_eeprom.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_q3a_core.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_is.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pproc_modules.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_vpe_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_vpe_module.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera2_wnr_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_wnr_module.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_dw9761b_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dw9761b_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_faceproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_gc0310.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_gc0310.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_hdr_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_lib.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_hi256.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hi256.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx132.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx132.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx134.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx134.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx135.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx135.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_imx214.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imx214.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_mn34150.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mn34150.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_mt9m114.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_mt9m114.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ofilm_oty5f03_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ofilm_oty5f03_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov13850_q13v06k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13850_q13v06k.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov13850.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov13850.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov16825.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov16825.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680_5987fhq.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2680_5987fhq.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680_cht852b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2680_cht852b.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2680.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2680_zs2p80f1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2680_zs2p80f1.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov2720.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov2720.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5645.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5645.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5648_oty5f03.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5648_oty5f03.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5648_p5v18g.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5648_p5v18g.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5648_q5v22e.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5648_q5v22e.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5670_30010a3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5670_30010a3.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5670_q5v41b.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5670_q5v41b.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov5670_qc700.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov5670_qc700.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov7695.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov7695.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8825.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8825.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8858_q8v19w_30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8858_q8v19w_30.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8858_q8v19w.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8858_q8v19w.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8858.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8858.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov8865_q8v18a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov8865_q8v18a.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_ov9724.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ov9724.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdafcamif.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_s5k3l1yx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l1yx.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_s5k3m2xm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3m2xm.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_S5K4E1_13P1BA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_S5K4E1_13P1BA.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_SKUAA_ST_gc0339.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_SKUAA_ST_gc0339.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_skuab_shinetech_gc0339.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_skuab_shinetech_gc0339.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_SKUAB_ST_s5k4e1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_SKUAB_ST_s5k4e1.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_skuf_ov12830_p12v01c.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_skuf_ov12830_p12v01c.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_skuf_ov5648_p5v23c.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_skuf_ov5648_p5v23c.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sonyimx135_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sonyimx135_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sp1628.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sp1628.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_ov8858_q8v19w_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_ov8858_q8v19w_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_p12v01m_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_p12v01m_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_p5v23c_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_p5v23c_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q13v04b_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q13v06k_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q13v06k_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q5v22e_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q5v22e_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q5v41b_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q5v41b_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunny_q8v18a_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunny_q8v18a_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_sunrise_pc0fe_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sunrise_pc0fe_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_t4k35.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_t4k35.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_t4k37.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_t4k37.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_bg_pca_algo.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_truly_cm7700_eeprom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_truly_cm7700_eeprom.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_wavelet_lib.so
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libts_detected_face_hal.so:system/vendor/lib/libts_detected_face_hal.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libts_face_beautify_hal.so:system/vendor/lib/libts_face_beautify_hal.so
+    vendor/asus/Z00xD/proprietary/vendor/lib/liboemcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcamera.so\
+    vendor/asus/Z00xD/proprietary/vendor/lib/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_detected_face_hal.so\
+    vendor/asus/Z00xD/proprietary/vendor/lib/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_face_beautify_hal.so
 
 # Sensor
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/bin/akmd09911:system/bin/akmd09911\
-    vendor/asus/Z00xD/proprietary/lib/hw/sensors.AKM.msm8916.so:system/lib/hw/sensors.AKM.msm8916.so\
-    vendor/asus/Z00xD/proprietary/lib/sensors.asus.so:system/lib/sensors.asus.so\
-    vendor/asus/Z00xD/proprietary/lib/hw/sensors.PS_ALS.msm8916.so:system/lib/hw/sensors.PS_ALS.msm8916.so\
-    vendor/asus/Z00xD/proprietary/lib64/hw/sensors.AKM.msm8916.so:system/lib64/hw/sensors.AKM.msm8916.so\
-    vendor/asus/Z00xD/proprietary/lib64/sensors.asus.so:system/lib64/sensors.asus.so\
-    vendor/asus/Z00xD/proprietary/lib64/hw/sensors.PS_ALS.msm8916.so:system/lib64/hw/sensors.PS_ALS.msm8916.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib/libcalmodule_gyroscope.so:system/vendor/lib/libcalmodule_gyroscope.so\
-    vendor/asus/Z00xD/proprietary/vendor/lib64/libcalmodule_gyroscope.so:system/vendor/lib64/libcalmodule_gyroscope.so\
-    vendor/asus/Z00xD/proprietary/lib/libcmdthread.so:system/lib/libcmdthread.so\
-    vendor/asus/Z00xD/proprietary/lib64/libcmdthread.so:system/lib64/libcmdthread.so\
-    vendor/asus/Z00xD/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf\
-    vendor/asus/Z00xD/proprietary/vendor/etc/calmodule.cfg:system/vendor/etc/calmodule.cfg
+    vendor/asus/Z00xD/proprietary/bin/akmd09911:$(TARGET_COPY_OUT_SYSTEM)/bin/akmd09911\
+    vendor/asus/Z00xD/proprietary/lib/hw/sensors.AKM.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.AKM.msm8916.so\
+    vendor/asus/Z00xD/proprietary/lib/sensors.asus.so:$(TARGET_COPY_OUT_SYSTEM)/lib/sensors.asus.so\
+    vendor/asus/Z00xD/proprietary/lib/hw/sensors.PS_ALS.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/sensors.PS_ALS.msm8916.so\
+    vendor/asus/Z00xD/proprietary/lib64/hw/sensors.AKM.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensors.AKM.msm8916.so\
+    vendor/asus/Z00xD/proprietary/lib64/sensors.asus.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/sensors.asus.so\
+    vendor/asus/Z00xD/proprietary/lib64/hw/sensors.PS_ALS.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/sensors.PS_ALS.msm8916.so\
+    vendor/asus/Z00xD/proprietary/vendor/lib/libcalmodule_gyroscope.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcalmodule_gyroscope.so\
+    vendor/asus/Z00xD/proprietary/vendor/lib64/libcalmodule_gyroscope.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalmodule_gyroscope.so\
+    vendor/asus/Z00xD/proprietary/lib/libcmdthread.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcmdthread.so\
+    vendor/asus/Z00xD/proprietary/lib64/libcmdthread.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcmdthread.so\
+    vendor/asus/Z00xD/proprietary/etc/sensors/hals.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/hals.conf\
+    vendor/asus/Z00xD/proprietary/vendor/etc/calmodule.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/calmodule.cfg
 	
 # Keymaster
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaster.b00\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaster.b01\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b02:system/etc/firmware/keymaster.b02\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b03:system/etc/firmware/keymaster.b03\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.mdt:system/etc/firmware/keymaster.mdt
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b00:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b00\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b01:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b01\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b02:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b02\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b03:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b03\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.mdt
     
 # Firmware
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04\
-    vendor/asus/Z00xD/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b00:system/etc/firmware/wcnss.b00\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b01:system/etc/firmware/wcnss.b01\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b02:system/etc/firmware/wcnss.b02\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b04:system/etc/firmware/wcnss.b04\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b06:system/etc/firmware/wcnss.b06\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b10:system/etc/firmware/wcnss.b10\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b11:system/etc/firmware/wcnss.b11\
-    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt
+    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b00:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b00\
+    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b01:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b01\
+    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b02:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b02\
+    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b03:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b03\
+    vendor/asus/Z00xD/proprietary/etc/firmware/venus.b04:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b04\
+    vendor/asus/Z00xD/proprietary/etc/firmware/venus.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.mdt\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b00:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b00\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b01:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b01\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b02:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b02\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b04:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b04\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b06:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b06\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b09:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b09\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b10:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b10\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.b11:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.b11\
+    vendor/asus/Z00xD/proprietary/etc/firmware/wcnss.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wcnss.mdt
 
 # Keystore
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib/hw/keystore.msm8916.so:system/vendor/lib/hw/keystore.msm8916.so \
-    vendor/asus/Z00xD/proprietary/vendor/lib64/hw/keystore.msm8916.so:system/vendor/lib64/hw/keystore.msm8916.so
+    vendor/asus/Z00xD/proprietary/vendor/lib/hw/keystore.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.msm8916.so \
+    vendor/asus/Z00xD/proprietary/vendor/lib64/hw/keystore.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8916.so
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
+    vendor/asus/Z00xD/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl.so
 
 # WiFi
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+    vendor/asus/Z00xD/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
 
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
