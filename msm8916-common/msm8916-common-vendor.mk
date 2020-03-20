@@ -18,8 +18,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-DEVICE_PACKAGE_OVERLAYS += vendor/asus/msm8916-common/overlay
-
 PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd\
     vendor/asus/msm8916-common/proprietary/bin/cnd:$(TARGET_COPY_OUT_SYSTEM)/bin/cnd\
