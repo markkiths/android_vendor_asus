@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/lib/hw/camera.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.msm8916.so \
+    vendor/asus/Z00xD/proprietary/lib/hw/camera.vendor.msm8916.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/camera.vendor.msm8916.so \
     vendor/asus/Z00xD/proprietary/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_beautyshot.so \
     vendor/asus/Z00xD/proprietary/lib/libarcsoft_face_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_face_tracking.so \
     vendor/asus/Z00xD/proprietary/lib/libarcsoft_hdr.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libarcsoft_hdr.so \
