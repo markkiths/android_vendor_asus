@@ -470,7 +470,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/vendor/lib/libcalmodule_gyroscope.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcalmodule_gyroscope.so\
     vendor/asus/Z00xD/proprietary/vendor/lib64/libcalmodule_gyroscope.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcalmodule_gyroscope.so\
     vendor/asus/Z00xD/proprietary/lib/libcmdthread.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcmdthread.so\
-    vendor/asus/Z00xD/proprietary/lib64/libcmdthread.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcmdthread.so
+    vendor/asus/Z00xD/proprietary/lib64/libcmdthread.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcmdthread.so\
+    vendor/asus/Z00xD/proprietary/etc/sensors/hals.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/hals.conf
 	
 # Keymaster
 PRODUCT_COPY_FILES += \
