@@ -504,10 +504,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/vendor/lib/hw/keystore.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/keystore.msm8916.so \
     vendor/asus/Z00xD/proprietary/vendor/lib64/hw/keystore.msm8916.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/keystore.msm8916.so
 
-# Bluetooth
-PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl.so
-
 # WiFi
 PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
