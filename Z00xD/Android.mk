@@ -16,13 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.vendor.hardware.bluetooth@1.0-impl
-LOCAL_MODULE_OWNER := asus
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
-LOCAL_MULTILIB := 64
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_OVERRIDES_PACKAGES := android.hardware.bluetooth@1.0-impl
-include $(BUILD_PREBUILT)
+ifeq ($(PRODUCT_DEVICE),Z00xD)
+
+endif # TARGET_DEVICE

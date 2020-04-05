@@ -16,6 +16,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifeq ($(TARGET_DEVICE),Z010D)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := libloc_api_v02
 LOCAL_MODULE_OWNER := asus
@@ -250,3 +252,4 @@ LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
+endif
