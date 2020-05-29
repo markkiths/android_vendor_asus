@@ -87,6 +87,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml\
     vendor/asus/Z010D/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml\
     vendor/asus/Z010D/proprietary/etc/permissions/qti_telephony_common.xml:system/etc/permissions/qti_telephony_common.xml\
+    vendor/asus/Z010D/proprietary/etc/permissions/privapp-permissions-ASUS_Z010D.xml:system/etc/permissions/privapp-permissions-ASUS_Z010D.xml \
     vendor/asus/Z010D/proprietary/etc/tamcid:system/etc/tamcid\
     vendor/asus/Z010D/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar\
     vendor/asus/Z010D/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar\
@@ -96,6 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar\
     vendor/asus/Z010D/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar\
     vendor/asus/Z010D/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar\
+    vendor/asus/Z010D/proprietary/framework/bspcapability.jar:system/framework/bspcapability.jar\
     vendor/asus/Z010D/proprietary/lib/DataSet/ditSCidGen/msgchk.db:system/lib/DataSet/ditSCidGen/msgchk.db\
     vendor/asus/Z010D/proprietary/lib/DataSet/ispDB/ParameterDB.db:system/lib/DataSet/ispDB/ParameterDB.db\
     vendor/asus/Z010D/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
@@ -364,6 +366,9 @@ PRODUCT_PACKAGES += \
     CNEService \
     qcrilmsgtunnel \
     QtiTetherService \
+    AsusCamera \
+    AsusGallery \
+    AsusGalleryBurst \
     vendor.qti.hardware.fm@1.0
 
 
@@ -857,3 +862,14 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/vendor/lib/soundfx/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdirac.so \
     vendor/asus/Z010D/proprietary/vendor/etc/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/diracmobile.config \
     vendor/asus/Z010D/proprietary/vendor/etc/diracvdd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/diracvdd.bin
+
+# AsusCamera
+PRODUCT_COPY_FILES += \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libgif.so:system/priv-app/AsusGallery/lib/arm/libgif.so \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_face_detection.so:system/priv-app/AsusGallery/lib/arm/libjni_face_detection.so \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_face_effect.so:system/priv-app/AsusGallery/lib/arm/libjni_face_effect.so \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_face_effect_KK.so:system/priv-app/AsusGallery/lib/arm/libjni_face_effect_KK.so \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGallery/lib/arm/libjni_filter_show.so:system/priv-app/AsusGallery/lib/arm/libjni_filter_show.so \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:system/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libjni_picbest_static.so:system/priv-app/AsusGalleryBurst/lib/arm/libjni_picbest_static.so \
+    vendor/asus/Z010D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libjni_piclear_static.so:system/priv-app/AsusGalleryBurst/lib/arm/libjni_piclear_static.so
