@@ -360,8 +360,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so\
     vendor/asus/msm8916-common/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so\
     vendor/asus/msm8916-common/proprietary/vendor/qcril.db:$(TARGET_COPY_OUT_VENDOR)/qcril.db \
-    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/asus/msm8916-common/proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.qti.snapdragon.sdk.display.jar
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.qti.snapdragon.sdk.display.xml
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
