@@ -523,7 +523,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b01:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b01\
     vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b02:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b02\
     vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b03:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b03\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.mdt
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.mdt\
+    vendor/asus/Z00xD/proprietary/etc/firmware/keymaste.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaste.mdt
     
 # Firmware
 PRODUCT_COPY_FILES += \
