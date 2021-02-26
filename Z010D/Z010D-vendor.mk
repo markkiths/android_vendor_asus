@@ -60,10 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z010D/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw\
     vendor/asus/Z010D/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw\
     vendor/asus/Z010D/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw\
-    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw\
-    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw\
-    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw\
-    vendor/asus/Z010D/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw\
     vendor/asus/Z010D/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin\
     vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b00:system/etc/firmware/keymaste.b00\
     vendor/asus/Z010D/proprietary/etc/firmware/keymaster.b01:system/etc/firmware/keymaste.b01\
