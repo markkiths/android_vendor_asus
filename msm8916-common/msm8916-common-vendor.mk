@@ -124,10 +124,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/dpmapi.jar\
     vendor/asus/msm8916-common/proprietary/framework/qcnvitems.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcnvitems.jar\
     vendor/asus/msm8916-common/proprietary/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/qcrilhook.jar\
-    vendor/asus/msm8916-common/proprietary/lib64/libOmxVdecHevc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxVdecHevc.so\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ditSCidGen/msgchk.db\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ParameterDB.db\
-    vendor/asus/msm8916-common/proprietary/lib/libOmxVdecHevc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxVdecHevc.so\
     vendor/asus/msm8916-common/proprietary/lib/style.cng:$(TARGET_COPY_OUT_SYSTEM)/lib/style.cng\
     vendor/asus/msm8916-common/proprietary/lib/libaptX_encoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libaptX_encoder.so\
     vendor/asus/msm8916-common/proprietary/vendor/bin/perfd:$(TARGET_COPY_OUT_VENDOR)/bin/perfd\
