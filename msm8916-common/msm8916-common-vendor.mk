@@ -20,6 +20,7 @@ LOCAL_PATH := $(call my-dir)
 
 PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd\
+    vendor/asus/msm8916-common/proprietary/vendor/bin/btnvtool:$(TARGET_COPY_OUT_VENDOR)/bin/btnvtool \
     vendor/asus/msm8916-common/proprietary/vendor/bin/move_widevine_data.sh:system/vendor/bin/move_widevine_data.sh \
     vendor/asus/msm8916-common/proprietary/bin/cnd:$(TARGET_COPY_OUT_SYSTEM)/bin/cnd\
     vendor/asus/msm8916-common/proprietary/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM)/bin/dpmd\
