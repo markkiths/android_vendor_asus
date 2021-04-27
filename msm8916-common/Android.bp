@@ -175,24 +175,6 @@ android_app_import {
 }
 
 dex_import {
-	name: "imscmlibrary",
-	owner: "asus",
-	jars: ["proprietary/framework/imscmlibrary.jar"],
-}
-
-dex_import {
-	name: "qcnvitems",
-	owner: "asus",
-	jars: ["proprietary/framework/qcnvitems.jar"],
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "asus",
-	jars: ["proprietary/framework/qcrilhook.jar"],
-}
-
-dex_import {
 	name: "com.qti.snapdragon.sdk.display",
 	owner: "asus",
 	jars: ["proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar"],

@@ -111,9 +111,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/etc/permissions/com.quicinc.cne.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.quicinc.cne.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/ConnectivityExt.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/ConnectivityExt.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/dpmapi.xml\
-    vendor/asus/msm8916-common/proprietary/etc/permissions/imscm.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/imscm.xml\
-    vendor/asus/msm8916-common/proprietary/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcnvitems.xml\
-    vendor/asus/msm8916-common/proprietary/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qcrilhook.xml\
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/imscm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/imscm.xml\
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/qcnvitems.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcnvitems.xml\
+    vendor/asus/msm8916-common/proprietary/vendor/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qcrilhook.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml\
     vendor/asus/msm8916-common/proprietary/etc/permissions/qti_telephony_common.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_telephony_common.xml\
     vendor/asus/msm8916-common/proprietary/etc/tamcid:$(TARGET_COPY_OUT_SYSTEM)/etc/tamcid\
@@ -123,6 +123,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/msm8916-common/proprietary/framework/com.quicinc.cne.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.quicinc.cne.jar\
     vendor/asus/msm8916-common/proprietary/framework/ConnectivityExt.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/ConnectivityExt.jar\
     vendor/asus/msm8916-common/proprietary/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/dpmapi.jar\
+    vendor/asus/msm8916-common/proprietary/vendor/framework/imscmlibrary.jar:$(TARGET_COPY_OUT_VENDOR)/framework/imscmlibrary.jar\
+    vendor/asus/msm8916-common/proprietary/vendor/framework/qcnvitems.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcnvitems.jar\
+    vendor/asus/msm8916-common/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ditSCidGen/msgchk.db\
     vendor/asus/msm8916-common/proprietary/lib/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ParameterDB.db\
     vendor/asus/msm8916-common/proprietary/lib/style.cng:$(TARGET_COPY_OUT_SYSTEM)/lib/style.cng\
@@ -385,13 +388,10 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     ims \
     imssettings \
-    imscmlibrary \
     colorservice \
     com.qti.snapdragon.sdk.display \
     shutdownlistener \
     CNEService \
     qcrilmsgtunnel \
     QtiTetherService \
-    qcnvitems \
-    qcrilhook
 
