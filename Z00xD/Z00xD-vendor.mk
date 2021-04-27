@@ -516,16 +516,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/etc/sensors/hals.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/sensors/hals.conf\
     vendor/asus/Z00xD/proprietary/vendor/lib/libsoftkeymaster.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoftkeymaster.so\
     vendor/asus/Z00xD/proprietary/vendor/lib64/libsoftkeymaster.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoftkeymaster.so
-	
-# Keymaster
-PRODUCT_COPY_FILES += \
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b00:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b00\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b01:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b01\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b02:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b02\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.b03:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.b03\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaster.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaster.mdt\
-    vendor/asus/Z00xD/proprietary/etc/firmware/keymaste.mdt:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/keymaste.mdt
-    
+
 # Firmware
 PRODUCT_COPY_FILES += \
     vendor/asus/Z00xD/proprietary/etc/firmware/venus.b00:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/venus.b00\

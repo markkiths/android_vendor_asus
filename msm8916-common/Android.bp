@@ -40,6 +40,25 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libloc_ds_api",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/lib/libloc_ds_api.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/lib64/libloc_ds_api.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libmm-abl",
 	owner: "asus",
 	strip: {
